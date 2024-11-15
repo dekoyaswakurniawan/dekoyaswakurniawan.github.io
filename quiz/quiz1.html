@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Favoritku</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347; /* Warna latar belakang header */
+            color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header img {
+            width: 50px; /* Ukuran logo */
+            height: auto;
+            margin-right: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        footer h3 {
+            margin-top: 0;
+        }
+        footer p, footer form {
+            margin: 10px 0;
+        }
+        footer form label {
+            display: block;
+            margin: 5px 0;
+        }
+        footer form input[type="text"], 
+        footer form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer form input[type="radio"], 
+        footer form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: blue;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        footer div.social-icons {
+            margin-top: 15px;
+        }
+        footer div.social-icons a img {
+            margin: 0 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://static.wixstatic.com/media/6fa670_ebe14d3fde8740f0a0ea5bb31b575548~mv2.png/v1/fill/w_143,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/default-logo.png.jpg" alt="Logo Restoran"> <!-- Ganti "logo.png" dengan path logo Anda -->
+        <h1>Restoran Favoritku</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <section id="home">
+            <h2>Selamat Datang di AROMA RESTO & COFFEE</h2>
+            <i>Restoran ini menawarkan hidangan spesial yang terbuat dari bahan-bahan segar dan berkualitas. Kami berkomitmen untuk memberikan pengalaman kuliner terbaik kepada setiap pelanggan.</i>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYhad5aPlIukjnUvwv4gI5Y6Kp1tOUM8tw3I2sVisBdINP9k7dXz_y4tMnKFnLoM4m4WxS59LY2S92_fNXYwI0Xw_8rqsL7w6F1wU1Cv9deT1y6gMBvTd9OGvnLMaX5jKz6sI4DEbSS6IkAgOgVb-wrI-3AjcQuZalBJsWOm3Jw3aMnA-7A3u6z8Mv/s925/padang%20jobs.jpg." alt="Gambar Restoran" style="display: block; margin: 0 auto;">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Tabel Menu -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Makanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/20c66b49-ccd1-4620-9ba6-b56df26d7e3d_a578474d-4c89-4fa4-9555-34c8114920ea.jpg" alt="Mie Goreng" width="100"></td>
+                        <td>Mie Goreng</td>
+                        <td>Rp15.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/9550045d-e845-4c47-9adf-97c44c36398a_2264d289-735a-4111-a585-5c7b3d8513eb.jpg?auto=format.jpg" alt="Ramen" width="100"></td>
+                        <td>Ramen</td>
+                        <td>Rp40.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1e0f30ee-1248-4f54-8340-2459277608b9_32024ef2-7755-4056-8286-d907255a7f7d_file20190321-28308-brasw9.jpeg?auto=format.jpg" alt="Soto Betawi" width="100"></td>
+                        <td>Soto Betawi</td>
+                        <td>Rp35.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6040312c-ec3e-4616-bbab-bfc06dfc1bfe_Go-Biz_20210130_122311.jpeg?auto=format" alt="Gado Gado" width="100"></td>
+                        <td>Gado Gado</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+                  <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama Minuman</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1d395a8f-13ea-4c4c-8bfc-5a0e4203a11c_ff7227cb-832e-41c6-b678-0ae655c66d6d_Go-Biz_20191023_145813.jpeg?auto=format.jpg" alt="Jus Mangga" width="100"></td>
+                        <td>Jus Manga</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4d277999-31e4-44f2-82ac-83d80c835743_d2d54b9f-82bc-4b15-8a54-3bca20128afc_file20190325-17041-yqsgh7.jpeg?auto=format.jpg" alt="Jus Alpukat" width="100"></td>
+                        <td>Jus alputkat</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0dbdef40-0f5e-41bb-bf8e-867cdf684d41_4b82a864-f5f7-4222-9bd0-c952c299bcbb.jpg?auto=format.jpg" alt="Jus Jeruk" width="100"></td>
+                        <td>Jus Jeruk</td>
+                        <td>Rp10.000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/dfc26678-1946-4b77-a898-1e920abaf7d5_Go-Biz_20210130_123253.jpeg?auto=format.jpg" alt="Ice Cream" width="100"></td>
+                        <td>Ice Cream</td>
+                        <td>Rp25.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <ol>
+                <li>"Suasana enak, nyaman dan rekomended buat bawa keluarga. " – supri</li>
+                <li>"Makanannya enak banget. Suasananya juga nyaman dan pas buat hang out bareng temen atau keluarga." – yono</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jl. Prof. Dr. Hamka No.44-45, Parupuk Tabing, Kec. Koto Tangah, Kota Padang, Sumatera Barat 25586</p>
+        <p>Telepon:  (0751) 447275| Email: aromakitchenpadang.com</p>
+        
+        <!-- Formulir Reservasi -->
+        <h3>Formulir Reservasi</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Tanggal Reservasi:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label>Jumlah Tamu:</label>
+            <input type="radio" id="2pax" name="guests" value="2" required> 2 Orang<br>
+            <input type="radio" id="4pax" name="guests" value="4"> 4 Orang<br>
+            <input type="radio" id="morepax" name="guests" value="more"> Lebih dari 4 Orang<br><br>
+
+            <input type="checkbox" id="terms" name="terms" required> Saya setuju dengan syarat dan ketentuan<br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tautan Media Sosial -->
+        <div class="social-icons">
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <a href="https://m.facebook.com/profile.php?id=1050046285036914" target="_blank">
+                <img src="https://w7.pngwing.com/pngs/282/704/png-transparent-facebook-messenger-logo-icon-facebook-facebook-logo-blue-text-trademark-thumbnail.png" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/explore/locations/368449066874877/aroma-kitchen-padang/?hl=id target="_blank">
+                <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?t=st=1731656655~exp=1731660255~hmac=265e7378a5b5b561b4d0430a3c84610291e833561ffd8f13a9fe92d0020a9f00&w=740" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/aromakitchen7" target="_blank">
+                <img src="https://freepnglogo.com/images/all_img/1707226109new-twitter-logo-png.png" alt="Twitter" width="30" height="30">
+            </a>
+        </div>
+
+        <!-- Google Maps Iframe -->
+        <h3>Lokasi Kami</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13418.53251984706!2d100.3428599666269!3d-0.8745154661286593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4c0ca253e5477%3A0x58a1e024b5c5de37!2sAROMA%20RESTO%20%26%20COFFEE!5e0!3m2!1sid!2sid!4v1731656256392!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
